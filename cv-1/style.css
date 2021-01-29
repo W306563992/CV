@@ -1,0 +1,47 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#list {
+    position:absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+}
+#box {
+    position: relative;
+}
+.right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%vh;
+}
+
+
+.dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+@media screen and (max-width: 480px){
+    #box .right {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+   #box #list {
+        position: absolute;
+        top: 200px;
+        left: 0;
+        width: 350px;
+        height: 500px;
+        overflow: scroll;
+    }
+}
